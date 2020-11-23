@@ -1,0 +1,126 @@
+body {
+    /* display: grid; */
+    width: 360px;
+    
+    grid-template-columns: 360px;
+    text-align: center;
+    margin: 30px 30px;
+    grid-template-rows: 30px 60px 200px 50px 150px 50px 36px;
+    
+}
+.ads {
+    display: none;
+}
+header { 
+    width: 100%;
+    border: 2px solid black;
+   
+}
+.servises .name {
+    border: none;
+}
+.testimonials .name {
+    border: none;
+}
+
+div {
+    width: 100%;
+    border: 2px solid black;
+    padding: 20px;
+    }
+footer {
+    width: 100%;
+    border: 2px solid black;
+    text-align: auto;
+    }
+
+.nav {
+    width: 100%;
+    border: 2px solid black;
+    text-decoration: none;
+    display: grid;
+}
+.social {
+    display:none;
+}
+.servises > p {
+    border: 2px solid black;
+    padding: 10px;
+}
+.testimonials > p {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+@media (min-width: 600px) {
+    body {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 600px;
+        margin: 30px 30px;
+        grid-template-rows: 40px 150px 200px 200px 50px 50px;
+    }
+        
+    header { grid-row: 1/2;}
+    .hero { grid-row: 2/3;}
+    .servises {grid-row: 3/4;}
+    .freelance { grid-row: 5/6;}
+    .testimonials { grid-row: 4/5;}
+    footer {grid-row: 6/7;}
+
+    .header {
+        display: none;
+    }
+        .social {
+            display: inline-block;
+            width: 15%;
+            }
+        .social.img {
+            float: left;
+            width: 15%;
+            border: 2px solid black;
+        } 
+        .social.link {
+            float: right;
+            border: 2px solid black;
+            width: 15%;
+        }
+        .testimonials .name {
+            font-size: 15px;
+        }
+
+        .testimonials > p {
+        width: 45%;
+        font-size: 12px;
+        float: left;
+        padding: 20px;
+        border: 2px solid black;
+        }
+
+    .servises { 
+        text-align: center;
+        width: 100%;
+        order: 3; 
+    }
+    .servises > p {
+            width: 45%;
+            float: left;
+            padding: 20px;
+            border: 2px solid black;
+            
+        }
+        p:nth-child(4){
+            display: none;
+        }
+    .nav {
+        display: none;
+    }
+    .servises >.name{
+        width: 100%;
+        border: 0;
+    }
+    .testimonials >.name{
+        width: 100%;
+        border: 0;
+    }
+}
